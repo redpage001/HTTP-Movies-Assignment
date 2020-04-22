@@ -53,19 +53,54 @@ body {
   width: 75%;
   margin: 1rem auto;
 }
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border: 0;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
+  padding: .5rem;
+}
+
 .save-button {
-  position: absolute;
-  top: 25px;
-  right: 25px;
   border: 1px solid grey;
+  width: 15%;
+  font-weight: bold;
   padding: 5px 10px;
   background-color: lightseagreen;
+  font-size: 1rem;
 }
 .save-button:hover {
   background-color: green;
   color: white;
 }
+.update-button {
+  border: 1px solid grey;
+  width: 15%;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: lightblue;
+  font-size: 1rem;
+}
+.update-button:hover {
+  background-color: blue;
+  color: white;
+}
 
+.delete-button {
+  border: 1px solid grey;
+  width: 15%;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: lightsalmon;
+  font-size: 1rem;
+}
+.delete-button:hover {
+  background-color: red;
+  color: white;
+}
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
@@ -74,4 +109,32 @@ body {
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.updateForm {
+  background-color: #fff;
+  border: 0;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  margin: 1rem auto;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 800px;
+  height: 25px;
+  font-size: 1.25rem;
+  padding-left: 15px;
+  margin: 1vh auto;
+}
+
+.form-button {
+  align-content: center;
 }
